@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 3.12)
 message("Build Cpp lesson 1")
 project(cpplesson_1 VERSION 0.0.1)
-set(CI_BUILD_NUMBER $ENV{TRAVIS_BUILD_NUMBER})
+set(CI_BUILD_NUMBER $ENV{CI_BUILD_NUMBER})
+if(NOT DEFINED CI_BUILD_NUMBER)
+    set(CI_BUILD_NUMBER -1)
+endif(NOT DEFINED CI_BUILD_NUMBER)
+
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 message("Boost include path: ${Boost_INCLUDE_DIR}")
