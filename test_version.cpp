@@ -1,4 +1,5 @@
 #define BOOST_TEST_MODULE cpptests
+#include <iostream>
 #include "boost/test/unit_test.hpp"
 #include "version.h"
 
