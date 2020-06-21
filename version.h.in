@@ -1,0 +1,4 @@
+#pragma once
+
+//Почему то устанавливает только переменную, которая уже определена в Cmake
+#cmakedefine CI_BUILD_NUMBER @CI_BUILD_NUMBER@
