@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.12)
 message("Build Cpp lesson 1")
 project(cpplesson_1 VERSION 0.0.1)
 set(CI_BUILD_NUMBER -1 CACHE STRING "Number of build from CI")
