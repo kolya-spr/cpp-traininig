@@ -10,7 +10,7 @@ BOOST_AUTO_TEST_CASE(cpplesson1_test_version){
     std::cerr << "Some text to console errors" << std::endl;
     std::cout << "CI_BUILD_NUMBER from application: " << CI_BUILD_NUMBER << std::endl;
     std::cout.flush();
-    BOOST_CHECK(CI_BUILD_NUMBER > 0);
+    BOOST_CHECK(CI_BUILD_NUMBER < 0);
 }
 
 BOOST_AUTO_TEST_SUITE_END()

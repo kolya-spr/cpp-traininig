@@ -14,7 +14,7 @@ script:
   - echo $TRAVIS_REPO_SLUG
   - cmake .
   - cmake --build .
-  - cmake --build --verbose . --target test
+  - env CTEST_OUTPUT_ON_FAILURE=1 cmake --build . --target test
   - cmake --build . --target package
 deploy:
   provider: script
