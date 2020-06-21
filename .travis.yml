@@ -14,4 +14,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - curl -f -T cpplesson_1_cli-0.0.1-Linux.deb -ukolya-spr:$BINTRAY_API_KEY "https://api.bintray.com/content/kolya-spr/training/lesson-1/$TRAVIS_BUILD_NUMBER/cpplesson_1_cli-0.0.1-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+    - curl -f -T cpplesson_1-0.0.1-Linux.deb -ukolya-spr:$BINTRAY_API_KEY "https://api.bintray.com/content/kolya-spr/training/lesson-1/$TRAVIS_BUILD_NUMBER/cpplesson_1_cli-0.0.1-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
